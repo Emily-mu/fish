@@ -3,7 +3,7 @@ library(haven)
 library(AER)
 read_data <- function(df)
 {
-  full_path <- paste("https://storage.googleapis.com/causal-inference-mixtape.appspot.com/", 
+  full_path <- paste("https://raw.github.com/Emily-mu/fish/master/data/", 
                      df, sep = "")
   df <- read_dta(full_path)
   return(df)
